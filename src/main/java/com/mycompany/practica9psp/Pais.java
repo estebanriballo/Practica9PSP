@@ -18,4 +18,54 @@ public class Pais {
         this.bandera = bandera;
         this.fecha_independencia = fecha_independencia;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getContinente() {
+        return continente;
+    }
+
+    public void setContinente(String continente) {
+        this.continente = continente;
+    }
+
+    public int getPoblacion() {
+        return poblacion;
+    }
+
+    public void setPoblacion(int poblacion) {
+        this.poblacion = poblacion;
+    }
+
+    public String getBandera() {
+        return bandera;
+    }
+
+    public void setBandera(String bandera) {
+        this.bandera = bandera;
+    }
+
+    public Calendar getFecha_independencia() {
+        return fecha_independencia;
+    }
+
+    public void setFecha_independencia(Calendar fecha_independencia) {
+        this.fecha_independencia = fecha_independencia;
+    }
+    
+    
 }

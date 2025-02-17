@@ -8,8 +8,16 @@
         <title>Práctica 9</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <% String hola = "Hola mundo"; %>
-        <%= hola.toString() %>
+        <header>
+            <h1>Pagina Web Práctica 9</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="zodiaco.jsp">Ver Zodico</a></li>
+                    <li><a href="lista.jsp">Lista Paises</a></li>
+                    <li><a href="tabla.jsp">Tabla</a></li>
+                </ul>
+            </nav>
+        </header>
     </body>
 </html>

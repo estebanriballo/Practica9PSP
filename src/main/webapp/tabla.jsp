@@ -1,9 +1,3 @@
-<%-- 
-    Document   : tabla
-    Created on : 17 feb 2025, 8:53:30
-    Author     : esteb
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

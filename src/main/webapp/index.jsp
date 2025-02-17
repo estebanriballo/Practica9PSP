@@ -16,9 +16,12 @@
                     <li><a href="">Inicio</a></li>
                     <li><a href="zodiaco.jsp">Ver Zodico</a></li>
                     <li><a href="lista.jsp">Lista Paises</a></li>
-                    <li><a href="tabla.jsp">Tabla</a></li>
+                    <li><a href="tabla.jsp">Tabla Paises</a></li>
                 </ul>
             </nav>
         </header>
+        <footer>
+            <p>&copy; 2025 Esteban Riballo Moreno, Hugo Pérez Muñóz y Miguel Pavón Limones</p>
+        </footer>
     </body>
 </html>

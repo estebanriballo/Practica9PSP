@@ -5,6 +5,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Tabla Paises</title>
+        <link rel="stylesheet" href="tabla.css"/>
     </head>
     <body>
         <h1>Tabla Paises</h1>

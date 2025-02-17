@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Práctica 9</title>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
         <header>

@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="">Inicio</a></li>
-                    <li><a href="zodiaco.jsp">Ver Zodico</a></li>
+                    <li><a href="zodiaco.jsp">Ver Zodiaco</a></li>
                     <li><a href="lista.jsp">Lista Paises</a></li>
                     <li><a href="tabla.jsp">Tabla Paises</a></li>
                 </ul>

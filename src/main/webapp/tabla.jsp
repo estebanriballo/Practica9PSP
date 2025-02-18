@@ -5,10 +5,23 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Tabla Paises</title>
-        <link rel="stylesheet" href="tabla.css"/>
+        <link rel="stylesheet" href="tablas.css"/>
     </head>
     <body>
-        <h1>Tabla Paises</h1>
+        <article>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Tabla Paises</a></li>
+                    <li><a href="index.jsp">Inicio</a></li>
+                    <li><a href="zodiaco.jsp">Zodiaco</a></li>
+                    <li><a href="lista.jsp">Lista Paises</a></li>
+                </ul>
+            </nav>
+            <h1>Tabla Paises</h1>
+        </header>
+        <br>
+        
         <%
             Class.forName("org.postgresql.Driver");
             
@@ -68,5 +81,6 @@
         <footer>
             <p>&copy; 2025 Esteban Riballo Moreno, Hugo Pérez Muñoz y Miguel Pavón Limones</p>
         </footer>
+        </article>
     </body>
 </html>

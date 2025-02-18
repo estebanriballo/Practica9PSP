@@ -1,4 +1,6 @@
+/* Reset básico */
 * {
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,6 +21,7 @@ header {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
 }
 
 nav ul {
@@ -27,10 +30,6 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
@@ -47,54 +46,47 @@ nav ul li a:hover {
     border-radius: 5px;
     transform: scale(1.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
 }
 
-/* Contenedores de continentes y países */
-.continent {
-    margin: 20px 0;
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-.continent h2 {
-    color: #0078D7;
-    margin-bottom: 10px;
-}
-
-/* Organiza los países en una fila */
-.countries {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* Estilo de cada país */
-.country {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+th {
     background-color: #0078D7;
     color: white;
-    padding: 15px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    min-width: 120px;
 }
 
-.country:hover {
-    transform: scale(1.05);
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-.flag {
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para las imágenes de las banderas */
+td img {
     width: 50px;
-    height: 30px;
+    height: auto;
     border-radius: 5px;
-    display: block;
-    margin: 0 auto 10px;
 }
 
+/* Pie de página */
 footer {
     background: #0078D7;
     color: white;
@@ -102,4 +94,10 @@ footer {
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+footer:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
 }

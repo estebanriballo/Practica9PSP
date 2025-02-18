@@ -1,3 +1,4 @@
+<%@page import="java.sql.*"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@ page import="java.util.*" %>
 <%@ page import="com.mycompany.practica9psp.JspCalendar" %>
@@ -24,22 +25,35 @@
         </header>
         <br>
         <section>
-            <h2>Ingrese su fecha de nacimiento</h2>
-            <form action="zodiaco.jsp" method="post">
-                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
-                <button type="submit">Calcular</button>
-            </form>
-        </section>
-        <section>
             <% 
                 JspCalendar calendar = new JspCalendar();
                 
-                if (request.getParameter("fechaNacimiento") != null) {
-                    String fechaStr = request.getParameter("fechaNacimiento");
-                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                    Date fechaNacimiento = sdf.parse(fechaStr);
-                    calendar.setFechaNacimiento(fechaNacimiento);
+                Class.forName("org.postgresql.Driver");
+            
+                Connection con = null;
+                Statement statement = null;
+                ResultSet rs = null;
+            
+                try{
+                    String url = "jdbc:postgresql://localhost:5432/p9DB";
+                    String user = "admin";
+                    String password = "admin";
+                    con = DriverManager.getConnection(url, user, password);
+
+                    statement = con.createStatement();
+                    rs = statement.executeQuery("SELECT fechanac FROM persona where id = 1");
+                
+                    if (rs.next()) {
+                        java.sql.Date fechaNacimiento = rs.getDate("fechanac");
+                        calendar.setFechaNacimiento(fechaNacimiento);
+                    }
+                } catch (Exception e) {
+                    out.println("<p>Error: " + e.getMessage() + "</p>");
+                    e.printStackTrace();
+                } finally {
+                    if (rs != null) try { rs.close(); } catch (SQLException e) { }
+                    if (statement != null) try { statement.close(); } catch (SQLException e) { }
+                    if (con != null) try { con.close(); } catch (SQLException e) { }
                 }
             %>
             <c:if test="${not empty calendar.fechaNacimiento}">

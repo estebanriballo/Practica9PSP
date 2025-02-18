@@ -21,7 +21,7 @@
             </nav>
         </header>
         <footer>
-            <p>&copy; 2025 Esteban Riballo Moreno, Hugo Pérez Muñóz y Miguel Pavón Limones</p>
+            <p>&copy; 2025 Esteban Riballo Moreno, Hugo Pérez Muñoz y Miguel Pavón Limones</p>
         </footer>
     </body>
 </html>

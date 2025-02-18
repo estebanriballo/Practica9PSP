@@ -8,7 +8,6 @@
     <meta charset="UTF-8">
     <title>Ver Zodiaco</title>
     <link rel="stylesheet" href="zodiaco.css"/>
-
 </head>
 <body>
     <article>
@@ -16,13 +15,12 @@
             <nav>
                 <ul>
                     <li><a href="#">Zodiaco</a></li>
-                    <li><a href="index.jsp">Ver Inicio</a></li>
+                    <li><a href="index.jsp">Inicio</a></li>
                     <li><a href="lista.jsp">Lista Paises</a></li>
                     <li><a href="tabla.jsp">Tabla Paises</a></li>
                 </ul>
             </nav>
             <h1>Calculadora de Edad y Signo Zodiacal</h1>
-            
         </header>
         <br>
         <section>
@@ -33,7 +31,6 @@
                 <button type="submit">Calcular</button>
             </form>
         </section>
-
         <section>
             <% 
                 JspCalendar calendar = new JspCalendar();
@@ -51,7 +48,7 @@
                 <p>Signo Zodiacal: <%= calendar.getSignoZodiacal() %></p>
             </c:if>
         </section>
-            <footer>
+        <footer>
             <p>&copy; 2025 Esteban Riballo Moreno, Hugo Pérez Muñoz y Miguel Pavón Limones</p>
         </footer>
     </article>

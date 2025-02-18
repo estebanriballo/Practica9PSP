@@ -46,9 +46,9 @@
                 <% 
                     java.sql.Date fecha = rs.getDate("fecha_independencia");
                     if (fecha != null) {
-                        out.println(fecha.toString());  // Imprime la fecha en formato "yyyy-mm-dd"
+                        out.println(fecha.toString());
                     } else {
-                        out.println("No se ha independizado");  // Imprime un mensaje si la fecha es null
+                        out.println("No se ha independizado");
                     }
                 %>
                 </td>
@@ -65,5 +65,8 @@
                 if (con != null) try { con.close(); } catch (SQLException e) { }
             }
         %>
+        <footer>
+            <p>&copy; 2025 Esteban Riballo Moreno, Hugo Pérez Muñoz y Miguel Pavón Limones</p>
+        </footer>
     </body>
 </html>
